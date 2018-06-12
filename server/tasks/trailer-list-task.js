@@ -4,7 +4,7 @@ const { resolve } = require('path')
 ;(async () => {
   const script = resolve(__dirname, '../crawler/trailer-list')
   const child = cp.fork(script, [])
-  let invoked = false //标识脚本有没有运行过
+  let invoked = false
 
   child.on('error', err => {
     if (invoked) return
