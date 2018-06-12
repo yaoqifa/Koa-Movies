@@ -23,6 +23,13 @@ async function fetchMovie (item) {
 
   movies.forEach(async m => {
     let movieData = await fetchMovie(m)
+    try {
+      movieData = JSON.parse(movieData)
+      console.log(movieData.tags)
+      console.log(movieData.summary)
+    } catch (error) {
+      console.log(error)
+    }
     console.log(movieData)
   })
 })()
