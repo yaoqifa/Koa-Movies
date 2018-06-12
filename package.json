@@ -1,0 +1,30 @@
+{
+  "name": "koa-movie",
+  "version": "1.0.0",
+  "description": "using Koa create a webapp，present latest movies",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "node server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaoqifa/Koa-Movie.git"
+  },
+  "keywords": [
+    "koa2",
+    "movie"
+  ],
+  "author": "yaoqifa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yaoqifa/Koa-Movie/issues"
+  },
+  "homepage": "https://github.com/yaoqifa/Koa-Movie#readme",
+  "dependencies": {
+    "koa": "^2.5.1",
+    "koa-views": "^6.1.4",
+    "pug": "^2.0.3",
+    "puppeteer": "^1.5.0"
+  }
+}
